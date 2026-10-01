@@ -1,17 +1,24 @@
-No permissions appear. The app requests none, so there are no usage-description strings.
+Thanks for reviewing this submission. We retested the build under review on a clean device and walked every screen and control. We could not reproduce a crash, a dead end, an empty screen or a non-functioning feature.
 
-There is no login, no in-app purchase, no user-generated content, no account deletion flow, and no App Tracking Transparency prompt.
+Three behaviours are deliberate. A short pass can treat them as gaps.
 
-Splicer is a watch pile for one person on this device. You stash titles on a stack, draw one onto the gate, and burn it when that watch finishes so the pile shrinks. It is for people who want to finish one title at a time, not keep a growing seen shelf or open a store of streams.
+1. After "Skip" or "Continue" on a first-time device with nothing saved, "Discover", "Ash", "Profile" and "Settings" are missing. The headline is "Nothing is on the board." and the only control is "Stash a title". That empty-board screen is intended. One stash, or any later burn, brings back "Burn the gate" and those four controls. The full-page empty state does not return unless "Reset all data" clears the board.
 
-No credentials or demo account are needed. On a cold launch that has never finished onboarding, a short system launch screen is followed by a three-page cover. Each page has Skip at the top right; Skip ends onboarding and opens the board the same way as Continue on the last page. Page 1 shows Keep one title on the gate. and Splicer is a watch pile for this device. You stash titles, then burn them one at a time. with Next. Page 2 shows Draw, then burn. and Draw moves the top of the stack onto the gate. Burn writes the finish and takes that title off the board. with Next. Page 3 shows Ash keeps the order. and Rate each burn from 1 to 5. Profile reads those grades and nothing else. with Continue. After Skip or Continue on a first-time device with nothing saved, the empty-board screen shows Nothing is on the board. and Stash a title on the stack, then draw it onto the gate when you are ready to watch. Tap Stash a title to open Discover. With Search a title clear, the shelf lists Night Ferry, Glass Orchard, Low Tide Ledger, and Copper Hour; each row offers Stash on the stack. After a stash, the board shows Stack and Gate under Burn the gate, with Discover, Ash, Profile, and Settings. Tap Draw when the gate chip reads Open and the stack is not The stack is empty. to seat the top title. Tap Burn the gate when the chip reads Seated; the sheet Rate with that title appears with The grade stays on this burn. and controls 1, 2, 3, 4, and 5, or dismiss to leave Unrated. Open Ash for burn order with day and Grade or Unrated. Open Profile for Burns and Grade 1 through Grade 5. Open Settings for Run onboarding again, Reset all data, or Contact.
+2. "Run onboarding again" in "Settings" closes the sheet and shows the three-page cover again on purpose. The stack, the gate and the burns stay. "Skip" on any page, or "Continue" on page 3, returns to the board as it was left.
 
-The pile, burns, and grades stay on this device. Contact in Settings opens the support page.
+3. After the last seated title is burned and the stack is empty, the board stays up. The chip reads "Open" and the lane shows "No title is seated." It does not return to "Nothing is on the board." because burns now exist. Use "Stash" for the next title.
 
-There is no region lock. English copy only is bundled. Day figures on Ash use the device calendar. Counts and grades follow the device number format without grouping separators.
+Full review path. No account, no login:
+- Cold launch: a short system launch screen, then a three-page cover. Each page has "Skip" at the top right. Page 1 shows "Keep one title on the gate." and "Next". Page 2 shows "Draw, then burn." and "Next". Page 3 shows "Ash keeps the order." and "Continue". "Skip" on any page, or "Continue" on page 3, opens the board.
+- First-time empty board: "Nothing is on the board." plus "Stash a title on the stack, then draw it onto the gate when you are ready to watch." Tap "Stash a title" to open "Discover".
+- "Discover": placeholder "Search a title". Clear field lists "Night Ferry", "Glass Orchard", "Low Tide Ledger" and "Copper Hour", each with "Stash on the stack". Tap a row to stash and return. Footer: "Title names from Open Food Facts".
+- Board: "Burn the gate", "Stack" and "Gate". "Draw" is disabled until the chip is "Open" and "Stack" is not "The stack is empty." Then "Draw" seats the top title ("Seated"). "Burn the gate" is disabled while "Open". When "Seated", tap it. Rate that title with "1" to "5", or dismiss to leave "Unrated". No control deletes one stack title.
+- "Ash": order of burns with day and "Grade 1" through "Grade 5" or "Unrated". If none: "No burns yet." "Return to the gate" closes it.
+- "Profile": "Burns" and "Grade 1" through "Grade 5". Empty: "No grades yet." then "Return to the gate".
+- "Settings": "Run onboarding again", "Reset all data" (alert "Reset the board?" then "Reset all data" or "Cancel"), and "Contact", which opens the support page.
 
-No licence or regulated-industry paperwork applies. The app is a personal entertainment watch pile and does not sell goods, handle payments, or provide regulated services.
+On Simulator, the first launch can finish the cover, stash the four shelf titles and draw "Night Ferry" onto the gate so "Burn the gate" is enabled and three titles remain on "Stack". A physical device does not get that filled board. After quit, the stack, the seated title, burns and grades resume. An unfinished cover does not resume mid-page; the next launch shows page 1. An unrated burn stays "Unrated".
 
-The app is a personal log only and gives no recommendations. It does not show health, medical, or product-health information. Discover lists names only; the on-screen credit is Title names from Open Food Facts.
+Technical facts: accounts, in-app purchases, ads, analytics and permission prompts are all absent. The pile, burns and grades stay on this device. English copy only; no region lock. Portrait only, iPhone and iPad, iOS 17.0 and later.
 
-There is no barcode or QR scan.
+If a device, screen or step still failed, please send that location and the exact wording shown. We will fix it and resubmit the same day.
