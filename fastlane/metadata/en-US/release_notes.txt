@@ -1,3 +1,3 @@
-Version 2.7 keeps Splicer Pro polished and reliable.
+Version 2.8 keeps Splicer Pro polished and reliable.
 • Stability and performance improvements
 • Small refinements throughout the app
